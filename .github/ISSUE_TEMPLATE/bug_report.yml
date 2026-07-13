@@ -1,89 +1,79 @@
-name: 🐛 버그 리포트
-description: 예상과 다르게 동작하는 문제 보고
-title: "[BUG] "
-labels: ["bug", "triage"]
+name: 버그 신고하기
+description: 재현 가능한 문제나 예상과 다른 동작을 알려주세요.
+title: "[Bug] "
+labels:
+  - bug
 assignees: []
 body:
   - type: markdown
     attributes:
       value: |
-        버그 제보 이슈 템플릿
-        아래 항목을 최대한 상세히 작성
+        버그를 제보해 주셔서 감사합니다.
+        개인정보, 비밀번호, API 토큰 등 민감정보는 첨부하지 마세요.
 
   - type: textarea
-    id: description
+    id: problem
     attributes:
-      label: 버그 설명
-      description: 발생한 문제에 대한 명확하고 간결한 설명
-      placeholder: 어떤 상황에서 어떤 문제가 발생했는지 작성
+      label: 문제 설명
+      description: 어떤 문제가 발생했는지 간결하게 설명해주세요.
     validations:
       required: true
 
   - type: textarea
-    id: reproduce
+    id: reproduction
     attributes:
-      label: 재현 방법
-      description: 문제를 재현하기 위한 단계
+      label: 재현 절차
+      description: 문제를 재현할 수 있도록 순서대로 작성해주세요.
       placeholder: |
-        1. '...' 페이지로 이동
-        2. '...' 버튼 클릭
-        3. '...' 입력
-        4. 에러 확인
+        1. ... 페이지로 이동합니다.
+        2. ... 버튼을 선택합니다.
+        3. ... 문제가 발생합니다.
     validations:
       required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: 기대 동작
-      description: 정상 동작 시 예상되는 결과
+      label: 예상 결과
+      description: 정상적으로 동작했다면 어떤 결과가 나와야 하는지 작성해주세요.
     validations:
       required: true
 
   - type: textarea
     id: actual
     attributes:
-      label: 실제 동작
-      description: 실제로 발생한 결과 (에러 메시지, 화면 등)
+      label: 실제 결과
+      description: 실제로 확인된 결과를 작성해주세요.
     validations:
       required: true
 
   - type: textarea
-    id: logs
-    attributes:
-      label: 에러 로그
-      description: 콘솔 로그, 스택 트레이스 등
-      render: shell
-    validations:
-      required: false
-
-  - type: dropdown
-    id: severity
-    attributes:
-      label: 심각도
-      options:
-        - Critical (서비스 불가)
-        - High (핵심 기능 장애)
-        - Medium (일부 기능 이상)
-        - Low (경미한 문제)
-    validations:
-      required: true
-
-  - type: input
     id: environment
     attributes:
       label: 실행 환경
-      description: OS, 브라우저/런타임 버전, 앱 버전 등
-      placeholder: "예: Windows 11, Chrome 126, Node.js v20.11"
+      description: 운영체제, 브라우저와 버전, 기기 등 재현 환경을 작성해주세요.
+      placeholder: 예시) Windows 11 / Chrome / 데스크톱
     validations:
       required: true
 
-  - type: checkboxes
-    id: checklist
+  - type: textarea
+    id: evidence
     attributes:
-      label: 체크리스트
+      label: 로그 및 스크린샷
+      description: 원인 파악에 도움이 되는 로그나 화면 자료를 첨부해주세요.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 추가 정보
+      description: 관련 이슈나 참고할 내용이 있으면 작성해주세요.
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 제출 전 확인
       options:
-        - label: 기존 이슈 중 중복 항목 검색 완료
+        - label: 동일한 내용의 기존 이슈가 없는지 검색했습니다.
           required: true
-        - label: 최신 버전에서 재현 확인
-          required: false
+        - label: 개인정보, 비밀번호, 토큰 등 민감정보를 포함하지 않았습니다.
+          required: true

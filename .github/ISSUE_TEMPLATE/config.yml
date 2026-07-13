@@ -1,5 +1,2 @@
 blank_issues_enabled: false
-contact_links:
-  - name: 질문 및 일반 논의
-    url: https://github.com/OWNER/REPO/discussions
-    about: 버그나 기능 요청이 아닌 일반 질문은 Discussions 이용
+contact_links: []
