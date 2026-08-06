@@ -11,6 +11,7 @@
 | 개선 제안 | `.github/ISSUE_TEMPLATE/improvement.yml` | 필요할 때 활성화 예정 |
 | 질문·기타 | `.github/ISSUE_TEMPLATE/question.yml` | 사용 중 |
 | Pull Request | `.github/PULL_REQUEST_TEMPLATE.md` | 사용 중 |
+| 보안 정책 | `SECURITY.md` | 사용 중 |
 
 기능 및 개선 제안 템플릿 파일은 저장소에 포함되어 있지만, 현재 이슈 운영에서는 버그 신고와 질문·기타 템플릿만 사용합니다. 빈 이슈 작성은 비활성화되어 있으므로, 세 템플릿에 해당하지 않는 내용은 질문·기타 템플릿으로 등록합니다.
 
@@ -25,6 +26,7 @@
 │   ├── improvement.yml
 │   └── question.yml
 └── PULL_REQUEST_TEMPLATE.md
+SECURITY.md
 ```
 
 ## 이슈 운영 규칙
