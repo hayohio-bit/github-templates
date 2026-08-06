@@ -9,9 +9,10 @@ GitHub 이슈와 Pull Request를 일관된 형식으로 관리하기 위한 공�
 | 버그 신고 | `.github/ISSUE_TEMPLATE/bug_report.yml` | 사용 중 |
 | 기능 제안 | `.github/ISSUE_TEMPLATE/feature_request.yml` | 필요할 때 활성화 예정 |
 | 개선 제안 | `.github/ISSUE_TEMPLATE/improvement.yml` | 필요할 때 활성화 예정 |
+| 질문·기타 | `.github/ISSUE_TEMPLATE/question.yml` | 사용 중 |
 | Pull Request | `.github/PULL_REQUEST_TEMPLATE.md` | 사용 중 |
 
-기능 및 개선 제안 템플릿 파일은 저장소에 포함되어 있지만, 현재 이슈 운영에서는 버그 신고 템플릿만 사용합니다.
+기능 및 개선 제안 템플릿 파일은 저장소에 포함되어 있지만, 현재 이슈 운영에서는 버그 신고와 질문·기타 템플릿만 사용합니다. 빈 이슈 작성은 비활성화되어 있으므로, 세 템플릿에 해당하지 않는 내용은 질문·기타 템플릿으로 등록합니다.
 
 ## 파일 구조
 
@@ -21,7 +22,8 @@ GitHub 이슈와 Pull Request를 일관된 형식으로 관리하기 위한 공�
 │   ├── bug_report.yml
 │   ├── config.yml
 │   ├── feature_request.yml
-│   └── improvement.yml
+│   ├── improvement.yml
+│   └── question.yml
 └── PULL_REQUEST_TEMPLATE.md
 ```
 
@@ -39,7 +41,9 @@ GitHub 이슈와 Pull Request를 일관된 형식으로 관리하기 위한 공�
 초기 운영에서는 다음 라벨을 사용합니다.
 
 - `bug`: 버그 신고
-- `enhancement`: 기능 제안 및 개선 아이디어
+- `enhancement`: 기능 제안
+- `refactor`: 개선·리팩터링 제안
+- `question`: 질문 및 기타 논의
 
 `priority:*` 형식의 우선순위 라벨은 운영 상황을 확인한 뒤 추가합니다.
 

@@ -56,6 +56,13 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: version
+    attributes:
+      label: 발생 버전
+      description: 문제가 발생한 앱 버전, 릴리스 태그 또는 커밋을 알고 있다면 작성해주세요.
+      placeholder: 예시) v1.4.2, main 브랜치 a1b2c3d
+
   - type: textarea
     id: evidence
     attributes:

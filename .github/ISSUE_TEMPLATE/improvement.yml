@@ -2,7 +2,7 @@ name: 개선·리팩터링 제안하기
 description: 기존 코드, 구조 또는 개발 환경의 개선을 제안해주세요.
 title: "[Improvement] "
 labels:
-  - enhancement
+  - refactor
 assignees: []
 body:
   - type: markdown
